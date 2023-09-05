@@ -1,0 +1,123 @@
+name: weather_pro
+description: Advanced weather app with detailed forecasts, radar maps, alerts, and AI-powered weather insights.
+
+publish_to: 'none'
+
+version: 2.5.0+18
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.1.1
+  riverpod: ^2.4.9
+  flutter_riverpod: ^2.4.9
+  bloc: ^8.1.2
+  flutter_bloc: ^8.1.3
+  
+  # UI Components
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  lottie: ^2.7.0
+  shimmer: ^3.0.0
+  flutter_staggered_animations: ^1.1.1
+  cached_network_image: ^3.3.0
+  flutter_animate: ^4.2.0+1
+  
+  # Navigation
+  go_router: ^12.1.3
+  auto_route: ^7.8.4
+  
+  # Data & Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  
+  # HTTP & API
+  http: ^1.1.2
+  dio: ^5.4.0
+  retrofit: ^4.0.3
+  json_annotation: ^4.8.1
+  
+  # Weather APIs
+  weather: ^3.1.1
+  openweathermap_api: ^1.0.0
+  weather_icons: ^3.0.0
+  
+  # Location & Maps
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  google_maps_flutter: ^2.5.0
+  
+  # Utils
+  intl: ^0.19.0
+  uuid: ^4.2.1
+  path_provider: ^2.1.2
+  permission_handler: ^11.1.0
+  url_launcher: ^6.2.2
+  package_info_plus: ^4.2.0
+  
+  # Charts & Visualization
+  fl_chart: ^0.66.0
+  syncfusion_flutter_charts: ^23.2.7
+  syncfusion_flutter_gauges: ^23.2.7
+  
+  # Maps & Radar
+  flutter_map: ^6.1.0
+  latlong2: ^0.8.1
+  mapbox_gl: ^0.16.0
+  
+  # Notifications
+  flutter_local_notifications: ^16.3.2
+  awesome_notifications: ^0.8.2
+  
+  # Background Tasks
+  workmanager: ^0.5.1
+  background_fetch: ^1.3.0
+  
+  # AI & ML
+  tflite_flutter: ^0.10.4
+  mlkit: ^0.15.0
+  
+  # Widgets
+  weather_widgets: ^1.0.0
+  animated_text_kit: ^4.2.2
+  
+  # Testing
+  mockito: ^5.4.4
+  build_runner: ^2.4.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  json_serializable: ^6.7.1
+  auto_route_generator: ^7.3.2
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/animations/
+    - assets/icons/
+    - assets/weather_icons/
+    - assets/backgrounds/
+    - assets/sounds/
+  
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
