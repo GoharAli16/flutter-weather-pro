@@ -14,17 +14,13 @@ import 'features/alerts/presentation/providers/alerts_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
+
   // Initialize services
   await WeatherService.initialize();
   await LocationService.initialize();
   await NotificationService.initialize();
-  
-  runApp(
-    const ProviderScope(
-      child: WeatherProApp(),
-    ),
-  );
+
+  runApp(const ProviderScope(child: WeatherProApp()));
 }
 
 class WeatherProApp extends ConsumerWidget {
@@ -34,7 +30,7 @@ class WeatherProApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final router = ref.watch(routerProvider);
     final themeMode = ref.watch(themeModeProvider);
-    
+
     return MaterialApp.router(
       title: AppConfig.appName,
       debugShowCheckedModeBanner: false,
